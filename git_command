@@ -1,0 +1,41 @@
+1.安装git
+	Ubuntu: $ sudo apt-get install git  
+		or $ sudo apt-get install git-core 　	# ord version
+	window: 下载安装包
+
+2.因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
+	$ git config --global user.name "Your Name"
+	$ git config --global user.email "email@example.com"
+	注意git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+
+3.创建版本库
+	$ mkdir mygit	# 创建仓库所在的文件目录　如果你使用Windows系统，为了避免遇到各种莫名其妙的问题，请确保目录名（包括父目录）不包含中文。 
+	$ cd mygit
+	
+	$ git init　　　#通过git init命令把当前目录变成Git可以管理的仓库：
+	Initialized empty Git repository in /Users/michael/learngit/.git/
+
+4.把文件添加到版本库
+	文件a.txt有如下内容
+	Git is a version control system.
+	Git is free software.
+	
+	$ git add a.txt　	#　命令git add添加 a.txt　到版本库中
+	
+	$ git commit -m "wrote a a.txt file"　用命令git commit告诉Git，把文件提交到仓库, -m　后边是文本说明
+	[master (root-commit) eaadf4e] wrote a readme file
+	 1 file changed, 2 insertions(+)
+	 create mode 100644 readme.txt
+	
+	注意：gir commit 可以同时提交多个文件。如下
+	$ git add file1.txt
+	$ git add file2.txt file3.txt
+	$ git commit -m "add 3 files."
+
+	
+	添加文件到Git仓库，分两步：
+   	 	使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+    		使用命令git commit -m <message>，完成。
+
+
+5.
