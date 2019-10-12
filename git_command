@@ -52,15 +52,17 @@
 7.链接github
 	在github上创建仓库
  	$  git remote add origin https://github.com/zhaokang1228/my_git.git 	# 其中zhaokang1228是github账户名，my_git是自己本地的仓库名
-	$ git push -u origin master 	# 上传自己本地仓库到github远程仓库（首次上传需要添加-u ，下次上传去掉-u）$ git push  origin master
+	$  git push -u origin master 	# 上传自己本地仓库到github远程仓库（首次上传需要添加-u ，下次上传去掉-u）$ git push  origin master
 	注意：上传提示的用户和密码是自己github的账户和密码
 
 
 
-	也可以在码云上创建仓库:例如
+	也可以在码云上创建仓库:例如同时关联github和gitee
 		$ git remote  rm origin		#首先删掉github远程链接
 		$　git remote add gitee https://gitee.com/zhaokang1228/First 	# 把码云上的链接链接到本地的git仓库，码云上也需要创建SSH key 和　仓库
-		$ 
+		$ git remote add github https://github.com/zhaokang1228/my_git.git
+		$ git push -u github master
+       		$ git push -u gitee master
 
 8.
 
