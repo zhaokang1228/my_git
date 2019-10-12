@@ -42,11 +42,29 @@
 5.查看文件状态和修改信息
 	$ git status 	#　查看版本库中文件状态信息（主要提示被修改的文件，也就是修改了但是没有提交到版本库中的文件）	
 	
-	$ git diff　file1 	#查看file1文件被修改的具体信息 
+	$ git diff　file1 	# 查看file1文件被修改的具体信息 
+
+
+6.创建SSH-key
+	$ ssh-keygen -t rsa -C "youremail@example.com"		#生成ssh密钥　
+	在github中自己的账户中添加SSH key 其中的其中的key填上id_rsa.pub文件的内容。
+
+7.链接github
+	在github上创建仓库
+ 	$  git remote add origin https://github.com/zhaokang1228/my_git.git 	# 其中zhaokang1228是github账户名，my_git是自己本地的仓库名
+	$ git push -u origin master 	# 上传自己本地仓库到github远程仓库（首次上传需要添加-u ，下次上传去掉-u）$ git push  origin master
+	注意：上传提示的用户和密码是自己github的账户和密码
 
 
 
+	也可以在码云上创建仓库:例如
+		$ git remote  rm origin		#首先删掉github远程链接
+		$　git remote add gitee https://gitee.com/zhaokang1228/First 	# 把码云上的链接链接到本地的git仓库，码云上也需要创建SSH key 和　仓库
+		$ 
 
+8.
+
+	
 
 
 
