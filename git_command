@@ -27,15 +27,29 @@
 	 1 file changed, 2 insertions(+)
 	 create mode 100644 readme.txt
 	
-	注意：gir commit 可以同时提交多个文件。如下
-	$ git add file1.txt
-	$ git add file2.txt file3.txt
-	$ git commit -m "add 3 files."
-
+	注意
+	１　gir commit 可以同时提交多个文件。如下
+		$ git add file1.txt
+		$ git add file2.txt file3.txt
+		$ git commit -m "add 3 files."
+	２．修改过的文件需要重新提交，不然不会被提交到版本库中
 	
 	添加文件到Git仓库，分两步：
    	 	使用命令git add <file>，注意，可反复多次使用，添加多个文件；
     		使用命令git commit -m <message>，完成。
 
+	
+5.查看文件状态和修改信息
+	$ git status 	#　查看版本库中文件状态信息（主要提示被修改的文件，也就是修改了但是没有提交到版本库中的文件）	
+	
+	$ git diff　file1 	#查看file1文件被修改的具体信息 
 
-5.
+
+
+
+
+
+
+
+
+
