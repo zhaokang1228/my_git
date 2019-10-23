@@ -64,7 +64,8 @@
 		$ git push -u github master
        		$ git push -u gitee master
 
-8.
+8.从github更新到本地
+	$ git pull github master
 
 	
 

@@ -1,5 +1,7 @@
 # my_git
-111
+<<<<<<< HEAD
+
+>>>>>>> da532f002edb0765d403310b98bdd510bdc7d78d
 #### Description
 {**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
 
